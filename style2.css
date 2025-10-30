@@ -1,0 +1,30 @@
+body{
+    font-family: Verdana;
+    font-size: 1.8em;
+    text-align: center;
+    background-color: white;
+}
+
+.radioTotal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+}
+
+.radioRow {
+  display: flex;
+  justify-content: center; 
+  gap: 50px;             
+}
+
+.labelRow {
+  display: flex;
+  justify-content: center; 
+  gap: 30px;             
+}
+
+.labelRow label {
+  text-align: center;
+  width: 40px; 
+  font-size: 0.8em;
+}
