@@ -17,6 +17,9 @@ const diceData = {
 };
 
 rollButton.onclick = function() {
+    numberList = [];
+    total = 0
+    document.getElementById("numbers").innerText = "";
     input = document.getElementById("input").value;
     selectedDie = document.querySelector('input[name="die"]:checked')
     if (input > 20) {
@@ -33,7 +36,13 @@ rollButton.onclick = function() {
         
             console.log(` ${selectedDie.value} ${numberList} ${total} `);
             document.getElementById("numbers").innerText = numberList;
+            if(input > 1){
             document.getElementById("totalShow").innerText = total;
+            }
+            else{
+                total = ""
+                document.getElementById("totalShow").innerText = total
+            }
             numberList.length = 0;
             total = 0;
     }
